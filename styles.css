@@ -50,6 +50,34 @@ body {
   margin-right: auto;
 }
 
+.colored-heading {
+  margin-top: 0;
+  margin-bottom: 45px;
+  font-family: Muller Extra Bold, sans-serif;
+  color: #B99150;
+  font-size: 45px;
+  line-height: 55px;
+}
+
+.colored-heading--orange {
+  color: #FFAF18;
+}
+
+.button {
+  color: #382400;
+  background-color: #FFAF18;
+  padding: 25px 54px;
+  font-family: Muller Bold, sans-serif;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: #ffffff;
+  background-color: #7c5202;
+}
+
 .navigation {
   box-shadow: 0 5px 10px rgb(223, 223, 223);
 }
@@ -127,28 +155,35 @@ body {
   color: #B99150;
 }
 
-.heading {
-  margin-top: 0;
-  margin-bottom: 45px;
-  font-family: Muller Extra Bold, sans-serif;
-  color: #B99150;
-  font-size: 45px;
+.products__heading {
+  margin: 0;
+/* MARGIN */
+  color: #BD985C;
+  text-align: center;
+  font-size: 35px;
+/* FF */
   line-height: 55px;
 }
 
-.heading__colored {
-  color: #FFAF18;
+.products__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-column-gap: 24px;
+  grid-row-gap: 25px;
 }
 
-.button {
-  color: #382400;
-  background-color: #FFAF18;
-  padding: 25px 54px;
-  font-family: Muller Bold, sans-serif;
-  text-decoration: none;
+.products__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px 20px;
+  box-shadow: 0px 0px 10px 0px rgb(223, 223, 223);
+
+  text-align: center;
 }
 
-.button:hover {
-  color: #ffffff;
-  background-color: #7c5202;
+.order__form {
+  display: flex;
+  flex-direction: column;
 }
