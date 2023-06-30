@@ -12,6 +12,8 @@
     <header class="navigation">
       <div class="container">
         <div class="navigation__wrapper">
+          <input class="visually-hidden" type="checkbox" name="toggle" id="toggle">
+          <label for="toggle" class="navigation__toggle"><span class="visually-hidden">Открыть меню</span></label>
           <a href="#" class="navigation__logo">
             <img class="logo" src="img/pizza.png" alt="Логотип" width="69" height="69">
             <span class="navigation__name">pizza cheff</span>
@@ -151,7 +153,7 @@
 
               <input type="tel" class="order__input" name="phone" id="phone" placeholder="Телефон" aria-label="Введите ваш номер телефона"  maxlength="14" minlength="11" required>
 
-              <input type="text" class="order__input" placeholder="Адрес доставки" required>
+              <input type="text" class="order__input" name="address" id="address" placeholder="Адрес доставки" required>
               <button type="submit" class="button">Оформить заказ</button>
             </form>
 
@@ -160,7 +162,8 @@
       </section>
     </main>
 
-    <!-- <script src="js/main.js"></script> -->
-    <script src="fslightbox.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/fslightbox.js"></script>
   </body>
 </html>
