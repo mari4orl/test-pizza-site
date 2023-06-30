@@ -146,12 +146,15 @@
               </h2>
               <p class="order__text">Мы гарантированно доставим вашу пиццу за 30 минут с момента оформления заказа. Если мы опоздаем даже на 1 минуту - вы получаете весь заказ бесплатно и ваучер на скидку на следующий заказ. Мы гордимся нашим сервисом и сделаем всё, чтобы наш клиент был доволен и не остался голодный!</p>
             </div>
-            <form action="" class="order__form">
-              <input type="text" placeholder="Ваше имя">
-              <input type="text" placeholder="Адрес доставки">
-              <input type="tel" placeholder="Телефон">
+            <form action="" class="order__form" method="post" name="form" id="form">
+              <input type="text" class="order__input" name="name" id="name" placeholder="Ваше имя" aria-label="Введите ваше имя" required oninput="this.value = this.value.replace(/\./g, '')"/>
+
+              <input type="tel" class="order__input" name="phone" id="phone" placeholder="Телефон" aria-label="Введите ваш номер телефона"  maxlength="14" minlength="11" required>
+
+              <input type="text" class="order__input" placeholder="Адрес доставки" required>
               <button type="submit" class="button">Оформить заказ</button>
             </form>
+
           </div>
         </div>
       </section>

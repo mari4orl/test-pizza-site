@@ -68,6 +68,8 @@ body {
   background-color: #FFAF18;
   padding: 20px 54px;
   font-family: Muller Bold, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
   text-decoration: none;
   border: none;
   cursor: pointer;
@@ -245,15 +247,57 @@ body {
   margin-bottom: 15px;
 }
 
+.products .button {
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
 .order {
   background-image: url('./img/pizzzzza.png');
   background-position: 100% 0;
   background-repeat: no-repeat;
   background-size: 410px 454px;
   padding-top: 54px;
+  margin-bottom: 105px;
+}
+
+.order__wrapper {
+  display: flex;
+  max-width: 840px;
+  align-items: center;
+}
+
+.order__content {
+  max-width: 384px;
+  margin-right: 126px;
+}
+
+.order .colored-heading {
+  font-size: 35px;
+  line-height: 45px;
+  margin-bottom: 65px;
+}
+
+.order__text {
+  margin: 0;
+  color: #B99150;
 }
 
 .order__form {
   display: flex;
   flex-direction: column;
+  row-gap: 24px;
+  width: 100%;
+}
+
+.order__input {
+  border: 1px solid #B99150;
+  color: #CBA86E;
+  font-size: 18px;
+  padding: 20px;
+}
+
+.order__input::placeholder {
+  color: #CBA86E;
+  font-size: 18px;
 }
