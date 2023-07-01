@@ -101,9 +101,9 @@ img {
   display: block;
 }
 
-.button:hover {
+.button:hover, .button:focus {
   color: #ffffff;
-  background-color: #7c5202;
+  background-color: #bd7d08;
 }
 
 .navigation {
@@ -158,8 +158,8 @@ img {
   color: #A46B00;
 }
 
-.navigation__link:hover {
-  color: #7c5202;
+.navigation__link:hover, .navigation__link:focus {
+  color: #5c3c00;
 }
 
 .inner {
@@ -288,7 +288,7 @@ img {
 
 .order {
   background-image: url('./img/pizzzzza.png');
-  background-position: 100% 0;
+  background-position: 85% 0;
   background-repeat: no-repeat;
   background-size: 410px 454px;
   padding-top: 54px;
@@ -416,10 +416,10 @@ img {
     margin: 0;
     margin-bottom: 20px;
     max-width: none;
+    text-align: center;
   }
 
   .order .colored-heading {
-    text-align: center;
     margin-bottom: 20px;
   }
 }
@@ -438,7 +438,7 @@ img {
   }
 
   .inner .colored-heading {
-    font-size: 25px;
+    font-size: 27px;
     line-height: 1.5;
     margin-bottom: 30px;
   }
@@ -479,5 +479,16 @@ img {
     background-position: center;
     background-repeat: no-repeat;
     position: static;
+  }
+
+  .products__heading {
+    margin-bottom: 25px;
+    font-size: 24px;
+    line-height: 1.5;
+  }
+
+  .order .colored-heading {
+    font-size: 24px;
+    line-height: 1.5;
   }
 }
